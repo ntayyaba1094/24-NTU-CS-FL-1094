@@ -1,3 +1,5 @@
+//Task 1 — Dual-LED fading with different PWM frequencies
+//Tayyaba_1094
 
 #include <Arduino.h>
 
@@ -5,7 +7,6 @@
 const int LED1_PIN = 18;
 const int LED2_PIN = 19;
 
-// Separate PWM channels for Arduino-ESP32 2.x
 const int LED1_CHANNEL = 0;
 const int LED2_CHANNEL = 1;
 
@@ -17,7 +18,7 @@ const int LED2_FREQ = 5000;   // 5 kHz
 const int PWM_RESOLUTION = 8;
 const int MAX_DUTY = 255;
 
-// Duty-cycle values, reused in Task 2
+// Duty-cycle values
 int duty1 = 0;
 int duty2 = 0;
 
